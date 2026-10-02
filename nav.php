@@ -1,4 +1,7 @@
-<?php // nav.php ?>
+<?php
+// nav.php
+?>
+
 <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:16px;">
     <a href="/assessment_beginner/index.php">Dashboard</a>
     <a href="/assessment_beginner/pages/clients_list.php">Clients</a>
@@ -6,5 +9,15 @@
     <a href="/assessment_beginner/pages/bookings_list.php">Bookings</a>
     <a href="/assessment_beginner/pages/tools_list_assign.php">Tools</a>
     <a href="/assessment_beginner/pages/payments_list.php">Payments</a>
+
+    <span>|</span>
+
+    <span>
+        Logged in as:
+        <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>
+    </span>
+
+    <a href="/assessment_beginner/logout.php">Logout</a>
 </div>
+
 <hr>
